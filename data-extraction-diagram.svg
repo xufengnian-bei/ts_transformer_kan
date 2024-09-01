@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 14px; }
+    .label { font-weight: bold; }
+  </style>
+  
+  <!-- 时间轴 -->
+  <line x1="50" y1="350" x2="750" y2="350" stroke="black" stroke-width="2"/>
+  <text x="400" y="380" text-anchor="middle">Time</text>
+  
+  <!-- 数据段 -->
+  <rect x="50" y="50" width="480" height="50" fill="lightblue" stroke="blue"/>
+  <text x="290" y="80" text-anchor="middle" class="label">seq_x (seq_len = 96)</text>
+  
+  <rect x="290" y="120" width="240" height="50" fill="lightgreen" stroke="green"/>
+  <text x="410" y="150" text-anchor="middle" class="label">label_len (48)</text>
+  
+  <rect x="530" y="190" width="220" height="50" fill="pink" stroke="red"/>
+  <text x="640" y="220" text-anchor="middle" class="label">pred_len (96)</text>
+  
+  <rect x="290" y="260" width="460" height="50" fill="lightyellow" stroke="orange"/>
+  <text x="520" y="290" text-anchor="middle" class="label">seq_y (label_len + pred_len = 144)</text>
+  
+  <!-- 标记 -->
+  <text x="50" y="40" class="label">s_begin</text>
+  <line x1="50" y1="45" x2="50" y2="350" stroke="gray" stroke-dasharray="5,5"/>
+  
+  <text x="530" y="40" class="label">s_end / r_begin</text>
+  <line x1="530" y1="45" x2="530" y2="350" stroke="gray" stroke-dasharray="5,5"/>
+  
+  <text x="750" y="40" class="label">r_end</text>
+  <line x1="750" y1="45" x2="750" y2="350" stroke="gray" stroke-dasharray="5,5"/>
+</svg>

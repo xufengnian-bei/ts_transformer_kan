@@ -1,0 +1,6 @@
+test_Transformer_ETTh1_ftS_sl96_ll48_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_test_0  
+mse:0.19789430499076843, mae:0.3767033815383911
+
+test_Transformer_ETTh1_ftS_sl96_ll48_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_test_1  
+mse:0.15780200064182281, mae:0.3277287781238556
+
